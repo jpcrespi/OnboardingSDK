@@ -13,12 +13,11 @@ Pod::Spec.new do |s|
   s.license               = { :type => "Commercial", :text => "Copyright 2019 Onboarding" }
   s.author                = "https://www.argentina.gob.ar"
 
-  s.platform              = :ios, "10.3"
-  s.module_name           = 'OnboardingSDK'
-  s.source          	    = { "http" => "https://github.com/jpcrespi/OnboardingSDK/archive/1.4.4.zip" }
+  s.platform              = :ios, "10.0"
+  s.source          	    = { "path" => "." }
   s.source_files          = "OnboardingSDK.framework/Headers/*.h"
   s.public_header_files   = "OnboardingSDK.framework/Headers/*.h"
-  s.vendored_frameworks   = "OnboardingSDK.framework"
+  s.vendored_frameworks   = ["OnboardingSDK.framework"]
   s.dependency              'GoogleMobileVision'
 
 end
